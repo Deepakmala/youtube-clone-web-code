@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <!-- Your YouTube Clone header here -->
+    </header>
+    
+    <main>
+      <section>
+        <h2>Retrieve Channel Information</h2>
+        <button id="channel-btn">Get Channel Info</button>
+        <div id="channel-info"></div>
+      </section>
+      
+      <section>
+        <h2>Upload Videos and Playlists</h2>
+        <form>
+          <label for="video-title">Video Title:</label>
+          <input type="text" id="video-title">
+          
+          <label for="video-description">Video Description:</label>
+          <textarea id="video-description"></textarea>
+          
+          <label for="video-file">Video File:</label>
+          <input type="file" id="video-file">
+          
+          <button type="submit" id="upload-video-btn">Upload Video</button>
+        </form>
+        
+        <form>
+          <label for="playlist-title">Playlist Title:</label>
+          <input type="text" id="playlist-title">
+          
+          <label for="playlist-description">Playlist Description:</label>
+          <textarea id="playlist-description"></textarea>
+          
+          <button type="submit" id="create-playlist-btn">Create Playlist</button>
+        </form>
+      </section>
+      
+      <section>
+        <h2>Retrieve Subscriptions and User Activity</h2>
+        <!-- Code to retrieve subscriptions and user activity here -->
+      </section>
+      
+      <section>
+        <h2>Topic-Based Searching and Search for Playlists or Channels</h2>
+        <form>
+          <label for="search-query">Search:</label>
+          <input type="text" id="search-query">
+          
+          <label for="search-type">Search Type:</label>
+          <select id="search-type">
+            <option value="topic">Topic</option>
+            <option value="playlist">Playlist</option>
+            <option value="channel">Channel</option>
+          </select>
+          
+          <button type="submit" id="search-btn">Search</button>
+        </form>
+        
+        <div id="search-results"></div>
+      </section>
+      
+      <section>
+        <h2>Create and Update a Playlist</h2>
+        <form>
+          <label for="playlist-id">Playlist ID:</label>
+          <input type="text" id="playlist-id">
+          
+          <label for="playlist-title">Playlist Title:</label>
+          <input type="text" id="playlist-title">
+          
+          <label for="playlist-description">Playlist Description:</label>
+          <textarea id="playlist-description"></textarea>
+          
+          <button type="submit" id="update-playlist-btn">Update Playlist</button>
+        </form>
+      </section>
+    </main>
+    
+    <footer>
+      <!-- Your YouTube Clone footer here -->
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
